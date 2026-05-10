@@ -1,0 +1,140 @@
+:root {
+    --primary: #066ac9;
+    --primary-hover: #04539e;
+    
+    --bg-angular: #fdeaea;
+    --bg-sketch: #fff2e7;
+    --bg-photoshop: #e3ebf6;
+    --bg-figma: #fdecf2;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Heebo', sans-serif;
+}
+
+.text-primary { color: var(--primary) !important; }
+.text-warning { color: #f7c32e !important; }
+
+/* Custom Overrides for Links */
+.course-title {
+    transition: color 0.3s ease;
+}
+.course-title:hover {
+    color: var(--primary) !important;
+}
+
+.view-detail-link {
+    transition: all 0.3s ease;
+}
+.view-detail-link i {
+    transition: transform 0.3s ease;
+}
+.view-detail-link:hover i {
+    transform: translateX(5px);
+}
+
+.footer-link {
+    transition: color 0.3s ease;
+}
+.footer-link:hover {
+    color: var(--primary) !important;
+}
+
+/* Featured Course Card Hover */
+.course-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 40px rgba(29,58,83,0.15) !important;
+}
+.course-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Top Listed Courses Backgrounds */
+.top-course-img {
+    height: 160px;
+}
+.bg-angular { background: linear-gradient(135deg, #ff6a88, #ff9a9e); }
+.bg-sketch { background: linear-gradient(135deg, #f6d365, #fda085); }
+.bg-photoshop { background: linear-gradient(135deg, #1f4037, #99f2c8); }
+.bg-figma { background: linear-gradient(135deg, #fbc2eb, #a6c1ee); }
+
+/* Common Hover effects */
+.transition-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.transition-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1) !important;
+}
+
+/* Accordion Customization */
+.accordion-button:not(.collapsed) {
+    color: var(--primary);
+    background-color: transparent;
+    box-shadow: none;
+}
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,.125);
+}
+
+/* Custom Utilities */
+.z-index-2 { z-index: 2; }
+.bg-light-soft { background-color: #fcfdfe; }
+
+/* Animations */
+.animate-up-down {
+    animation: upDown 3s ease-in-out infinite alternate;
+}
+
+@keyframes upDown {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-15px); }
+}
+/* Custom Margin & Negative Margin Utilities */
+.mt-6 { margin-top: 4rem !important; }
+.mt-7 { margin-top: 5rem !important; }
+.mb-n5 { margin-bottom: -3rem !important; }
+.mb-n8 { margin-bottom: -6rem !important; }
+.ms-n6 { margin-left: -4rem !important; }
+.ms-n7 { margin-left: -5rem !important; }
+.mt-n3 { margin-top: -1rem !important; }
+.me-n4 { margin-right: -1.5rem !important; }
+.z-index-1 { z-index: 1 !important; }
+.h-60px { height: 60px !important; }
+
+/* Top Listed Courses Slider */
+.course-slide {
+    width: calc(25% - 18px); /* 4 cards with 24px gap */
+}
+@media (max-width: 991.98px) {
+    .course-slide { width: calc(33.333% - 16px); } /* 3 cards */
+}
+@media (max-width: 767.98px) {
+    .course-slide { width: calc(50% - 12px); } /* 2 cards */
+}
+@media (max-width: 575.98px) {
+    .course-slide { width: calc(100%); } /* 1 card */
+}
+
+/* Slider arrow buttons - show on hover */
+.slider-arrow {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+#topCoursesWrapper:hover .slider-arrow {
+    opacity: 1;
+}
+.slider-arrow:hover {
+    background-color: #fff !important;
+    opacity: 1 !important;
+}

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduport - LMS, Education and Course Theme</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Top Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm py-3 sticky-top">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center fw-bold" href="#">
+                <img src="./assets/images/logo/logo.svg" alt="Eduport Logo" style="height: 35px;">
+            </a>
+
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar collapse -->
+            <div class="navbar-collapse collapse" id="navbarCollapse">
+                <!-- Search -->
+                <div class="col-xl-7">
+                    <div class="nav my-3 my-xl-0 px-4 flex-nowrap align-items-center">
+                        <div class="nav-item w-100">
+                            <form class="rounded position-relative">
+                                <input class="form-control pe-5 bg-light border-0" type="search" placeholder="Search"
+                                    aria-label="Search">
+                                <button
+                                    class="btn btn-link bg-transparent px-2 py-0 position-absolute top-50 end-0 translate-middle-y"
+                                    type="submit"><i class="fas fa-search fs-6 text-primary"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- Nav links -->
+                <ul class="navbar-nav navbar-nav-scroll ms-auto">
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active" href="#"
+                            data-bs-toggle="dropdown">Demos</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Home Default</a></li>
+                            <li><a class="dropdown-item" href="#">Home Education</a></li>
+                            <li><a class="dropdown-item active" href="#">Home Workshop</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Components</a></li>
+                </ul>
+            </div>
+
+            <!-- Right side Icons -->
+            <ul class="nav flex-row align-items-center list-unstyled ms-xl-auto">
+                <li class="nav-item ms-0 ms-md-3">
+                    <a class="btn btn-light rounded-circle shadow-sm d-flex align-items-center justify-content-center position-relative"
+                        href="#" style="width: 40px; height: 40px;"><i class="fas fa-bell text-dark"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle p-1 bg-danger rounded-circle"
+                            style="width: 8px; height: 8px;"></span>
+                    </a>
+                </li>
+                <li class="nav-item ms-3">
+                    <a href="#" class="d-block">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop"
+                            class="rounded-circle border border-2 border-white shadow-sm"
+                            style="width: 40px; height: 40px;" alt="Profile">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-5 overflow-hidden pt-6 pt-xxl-0">
+        <div class="container-fluid">
+            <div class="row g-4 g-md-5 align-items-center justify-content-between mb-xxl-n7">
+
+                <!-- Left image side START -->
+                <div class="col-lg-3 col-xl-4 col-xxl-3 d-none d-lg-block">
+                    <div class="row g-md-5 align-items-center ms-n6">
+                        <div class="col-6">
+                            <img src="./assets/images/bg/3by4/07.jpg" class="rounded-3 mt-6 mb-5 img-fluid"
+                                alt="Student">
+                            <img src="./assets/images/bg/3by4/06.jpg" class="rounded-3 img-fluid" alt="Student">
+                        </div>
+
+                        <div class="col-6 position-relative">
+                            <img src="./assets/images/bg/3by4/05.jpg" class="rounded-3 img-fluid" alt="Student">
+
+                            <!-- Svg element decoration -->
+                            <img src="./assets/images/element/17.svg"
+                                class="h-60px position-absolute top-0 start-0 ms-3 mt-n3" alt="Decoration">
+                        </div>
+                    </div>
+                </div>
+                <!-- Left image side END -->
+
+                <!-- Main content -->
+                <div class="col-lg-6 col-xl-4 col-xxl-5 text-center position-relative">
+                    <h1 class="display-5 fw-bold mb-4 text-dark lh-sm" style="font-family: 'Heebo', sans-serif;">
+                        Discover best classes for the best learning
+                    </h1>
+
+                    <p class="lead text-muted mb-5 mx-auto" style="max-width: 600px; font-size: 1.1rem;">
+                        Online learning and teaching marketplace with 5K+ courses & 10M students. Taught by experts to
+                        help you acquire new skills.
+                    </p>
+
+                    <div class="d-flex flex-wrap gap-4 align-items-center justify-content-center">
+                        <a href="#"
+                            class="btn btn-warning px-4 py-3 rounded-3 fw-bold text-dark shadow-sm d-flex align-items-center gap-2"
+                            style="background-color: #f7c32e; border: none;">
+                            View Courses <i class="fas fa-arrow-right ms-1"></i>
+                        </a>
+                        <div class="d-flex align-items-center gap-3">
+                            <a href="#"
+                                class="btn btn-white bg-white text-danger rounded-circle shadow-sm d-flex align-items-center justify-content-center"
+                                style="width: 50px; height: 50px;">
+                                <i class="fas fa-play"></i>
+                            </a>
+                            <span class="fw-bold text-dark">Watch video</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right image side START -->
+                <div class="col-lg-3 col-xl-4 col-xxl-3 d-none d-lg-block">
+                    <div class="row g-4 align-items-center me-n4">
+                        <!-- Images -->
+                        <div class="col-4">
+                            <img src="./assets/images/bg/3by4/01.jpg" class="rounded-3 img-fluid" alt="Student">
+                        </div>
+
+                        <!-- Images -->
+                        <div class="col-5 position-relative">
+                            <img src="./assets/images/bg/3by4/02.jpg" class="rounded-3 mb-5 img-fluid" alt="Student">
+                            <img src="./assets/images/bg/3by4/03.jpg" class="rounded-3 mb-n5 img-fluid" alt="Student">
+
+                            <!-- Content -->
+                            <div class="p-3 card card-body shadow position-absolute top-0 start-0 translate-middle z-index-1 d-none d-xxl-block mt-6 ms-n7"
+                                style="border-radius: 12px; width: max-content;">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <!-- Icon -->
+                                    <div class="bg-warning text-white rounded-2 d-flex justify-content-center align-items-center flex-shrink-0"
+                                        style="width: 32px; height: 32px;">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <!-- Info -->
+                                    <h6 class="mb-0 small fw-bold ms-3" style="max-width: 150px; line-height: 1.3;">Over
+                                        1M Students have given a five star review to their tutors</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Images -->
+                        <div class="col-3">
+                            <img src="./assets/images/bg/3by4/04.jpg" class="rounded-3 mt-7 mb-5 img-fluid"
+                                alt="Student">
+                            <img src="./assets/images/bg/3by4/08.jpg" class="rounded-3 mb-n8 img-fluid" alt="Student">
+                        </div>
+                    </div>
+                </div>
+                <!-- Right image side END -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Our Classes Section -->
+    <section class="py-5 position-relative">
+        <div class="container">
+            <div class="row g-4">
+
+                <!-- Title -->
+                <div class="col-sm-6 col-lg-4">
+                    <h2 class="fw-bold">Why choose our classes</h2>
+                    <p class="mb-0">Comfort reached gay perhaps chamber his six detract besides add. Moonlight newspaper
+                        up its enjoyment agreeable depending.</p>
+                </div>
+
+                <!-- Feature 1: Occasional Video Update -->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card card-body bg-light p-4 h-100 border-0">
+                        <figure class="mb-3">
+                            <i class="fas fa-video fa-2x" style="color: #0d6efd;"></i>
+                        </figure>
+                        <h5 class="fw-bold">Occasional Video Update</h5>
+                        <p class="mb-0 text-muted">Mountains in just switching city steps Might rung line what Was or
+                            between towards the have phase.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 2: Online Course From Experts -->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card card-body bg-light p-4 h-100 border-0">
+                        <figure class="mb-3">
+                            <i class="fas fa-users fa-2x" style="color: #fd7e14;"></i>
+                        </figure>
+                        <h5 class="fw-bold">Online Course From Experts</h5>
+                        <p class="mb-0 text-muted">Prisoners And mountains in just switching city steps Might rung line
+                            Was or between the have phase.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 3: Class Program Options -->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card card-body bg-light p-4 h-100 border-0">
+                        <figure class="mb-3">
+                            <i class="fas fa-project-diagram fa-2x" style="color: #6f42c1;"></i>
+                        </figure>
+                        <h5 class="fw-bold">Class Program Options</h5>
+                        <p class="mb-0 text-muted">Switching city steps Might rung line what Mr Bulk; Was or between
+                            towards the have phase.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 4: Over 500+ High Quality Courses -->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card card-body bg-light p-4 h-100 border-0">
+                        <figure class="mb-3">
+                            <i class="fas fa-book-open fa-2x" style="color: #f7c32e;"></i>
+                        </figure>
+                        <h5 class="fw-bold">Over 500+ High Quality Courses</h5>
+                        <p class="mb-0 text-muted">Go he prisoners And mountains in just switching city steps Might.</p>
+                    </div>
+                </div>
+
+                <!-- Feature 5: Earn a Certificate of Achievement -->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="card card-body bg-light p-4 h-100 border-0">
+                        <figure class="mb-3">
+                            <i class="fas fa-certificate fa-2x" style="color: #198754;"></i>
+                        </figure>
+                        <h5 class="fw-bold">Earn a Certificate of Achievement</h5>
+                        <p class="mb-0 text-muted">Go he prisoners And mountains in just switching city steps Might.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Courses Section -->
+    <section class="py-5 bg-light-soft mt-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold display-6">Featured Courses With Their Instructors</h2>
+                <p class="text-muted">Space is limited. Reserve your spot today!</p>
+            </div>
+            <div class="row g-4" id="featuredCoursesContainer">
+                <!-- Dynamically populated -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-0 mt-5">
+        <div class="container">
+            <div class="bg-light rounded-3 p-4 p-md-5">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6">
+                        <h6 class="text-primary fw-bold">Newsletter</h6>
+                        <h2 class="fw-bold mb-3">Subscribe Mail list!</h2>
+                        <p class="mb-0 text-muted">Speedily say has suitable disposal add boy. On forth doubt miles of
+                            child.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <form class="bg-white rounded-2 p-2 shadow-sm">
+                            <div class="input-group">
+                                <input class="form-control border-0 me-1" type="email" placeholder="Enter your email">
+                                <button type="button" class="btn btn-primary mb-0 rounded-2 px-4">Subscribe!</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Listed Courses Section -->
+    <section class="py-5 mt-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold display-6">Top Listed Courses</h2>
+                <p class="text-muted">Check out most 🤩 courses in the market</p>
+            </div>
+            <div class="position-relative" id="topCoursesWrapper">
+                <div class="overflow-hidden">
+                    <div class="d-flex" id="topCoursesSlider" style="transition: transform 0.5s ease; gap: 24px;">
+                        <!-- Dynamically populated -->
+                    </div>
+                </div>
+                <button id="sliderPrev"
+                    class="btn btn-white bg-white bg-opacity-75 shadow rounded-circle position-absolute top-50 translate-middle-y d-none d-md-flex align-items-center justify-content-center slider-arrow"
+                    style="width: 48px; height: 48px; z-index: 2; left: -10px; backdrop-filter: blur(10px);"><i
+                        class="fas fa-chevron-left"></i></button>
+                <button id="sliderNext"
+                    class="btn btn-white bg-white bg-opacity-75 shadow rounded-circle position-absolute top-50 translate-middle-y d-none d-md-flex align-items-center justify-content-center slider-arrow"
+                    style="width: 48px; height: 48px; z-index: 2; right: -10px; backdrop-filter: blur(10px);"><i
+                        class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Frequently Asked Questions Section -->
+    <section class="py-5 bg-light-soft mt-5">
+        <div class="container py-4">
+            <div class="row gx-5">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <h2 class="fw-bold mb-4 display-6">Frequently Asked<br>Questions</h2>
+                    <p class="text-muted lead">We are answering the most frequent questions. No worries if you do not
+                        find the exact one.</p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="accordion border-0 shadow-sm rounded" id="faqAccordion">
+                        <!-- Dynamically populated -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4 pe-lg-5">
+                    <a href="#" class="text-decoration-none d-flex align-items-center mb-4"><img
+                            src="./assets/images/logo/logo.svg" alt="Logo" style="height: 40px;"></a>
+                    <p class="text-muted small lh-lg pe-lg-4">Eduport education theme, built specifically for the
+                        education centers.</p>
+                </div>
+                <div class="col-sm-6 col-lg-2">
+                    <h5 class="fw-bold mb-4 fs-6">Company</h5>
+                    <ul class="list-unstyled mb-0 lh-lg small">
+                        <li><a href="#" class="text-muted text-decoration-none footer-link">About us</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none footer-link">Contact us</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none footer-link">Career</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <h5 class="fw-bold mb-4 fs-6">Teaching</h5>
+                    <ul class="list-unstyled mb-0 lh-lg small">
+                        <li><a href="#" class="text-muted text-decoration-none footer-link">Become instructor</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none footer-link">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <h5 class="fw-bold mb-4 fs-6">Follow Us</h5>
+                    <ul class="list-unstyled mb-0 lh-lg small">
+                        <li><a href="#" class="text-muted text-decoration-none footer-link"><i
+                                    class="fab fa-whatsapp me-2"></i> WhatsApp</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none footer-link"><i
+                                    class="fab fa-youtube me-2"></i> YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center pt-4 border-top">
+                <div class="text-muted small">Copyrights ©2024 Eduport. Build by Webestica.</div>
+                <ul class="list-inline mb-0 small">
+                    <li class="list-inline-item"><a href="#" class="text-muted text-decoration-none">Terms of use</a>
+                    </li>
+                    <li class="list-inline-item ms-3"><a href="#" class="text-muted text-decoration-none">Privacy
+                            policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollTopBtn" class="btn btn-primary rounded-circle shadow"
+        style="position: fixed; bottom: 30px; right: 30px; width: 45px; height: 45px; z-index: 1000; opacity: 0; visibility: hidden; transition: 0.3s; display: flex; align-items: center; justify-content: center;"><i
+            class="fas fa-arrow-up"></i></button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Data for Rendering
+            const featuredCourses = [
+                { id: '01', title: 'Build your brand & business', instructor: 'Dennis Barrett', rating: 4.3 },
+                { id: '02', title: 'Master in logo design', instructor: 'Jacqueline Miller', rating: 4.5 },
+                { id: '03', title: 'Create brand using vector illustration', instructor: 'Louis Ferguson', rating: 4.8 },
+                { id: '06', title: 'Develop your marketing skills style', instructor: 'Frances Guerrero', rating: 4.2 },
+                { id: '07', title: 'Build your own responsive website', instructor: 'Amanda Reed', rating: 4.8 },
+                { id: '08', title: 'Become a professional product photographer', instructor: 'Samuel Bishop', rating: 4.7 },
+                { id: '10', title: 'Developed your photo editing skills', instructor: 'Lori Stevens', rating: 4.9 },
+                { id: '11', title: 'Master logo design', instructor: 'Joan Wallace', rating: 4.0 }
+            ];
+
+            const topCourses = [
+                { img: '08', title: 'Sketch from A to Z: for app designer', instructor: 'Billy Vasquez' },
+                { img: '02', title: 'Graphic Design Masterclass', instructor: 'Carolyn Ortiz' },
+                { img: '03', title: 'Create a Design System in Figma', instructor: 'Dennis Barrett' },
+                { img: '11', title: 'Build Responsive Websites with HTML', instructor: 'Larry Lawson' },
+                { img: '06', title: 'Build Responsive Websites with Angular', instructor: 'Larry Lawson' }
+            ];
+
+            const faqs = [
+                { q: "What is this theme layout for?", a: "Yet remarkably appearance gets him his projection. Diverted endeavor bed peculiar men the not desirous.", show: true },
+                { q: "How can we help?", a: "Dummy text for how can we help. You can easily modify this text according to your actual content." },
+                { q: "How to edit my Profile?", a: "Dummy text for editing profile. Go to settings and click on edit profile." },
+                { q: "How much should I offer the sellers?", a: "Dummy text for offering sellers. It completely depends on market value." },
+                { q: "Additional Options and Services", a: "Dummy text for additional options. We provide 24/7 support." }
+            ];
+
+            // Render Featured Courses
+            const fcContainer = document.getElementById('featuredCoursesContainer');
+            featuredCourses.forEach(c => {
+                fcContainer.innerHTML += `
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="card h-100 border-0 shadow-sm course-card">
+                            <div class="position-relative">
+                                <span class="badge bg-dark position-absolute top-0 start-0 m-3 p-2 rounded-2"><i class="fas fa-star text-warning"></i> ${c.rating}</span>
+                                <img src="./assets/images/instructor/${c.id}.jpg" class="card-img-top" alt="Instructor">
+                            </div>
+                            <div class="card-body px-3 pb-3">
+                                <h5 class="card-title fw-bold mb-3 fs-6"><a href="#" class="text-dark text-decoration-none stretched-link">${c.title}</a></h5>
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="bg-secondary rounded-circle me-2" style="width: 30px; height: 30px;"></div>
+                                    <span class="text-muted small">${c.instructor}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+            });
+
+            // Render Top Courses
+            const tcSlider = document.getElementById('topCoursesSlider');
+            topCourses.forEach(c => {
+                tcSlider.innerHTML += `
+                    <div class="course-slide flex-shrink-0">
+                        <div class="card border bg-transparent h-100">
+                            <img src="./assets/images/courses/4by3/${c.img}.jpg" class="card-img-top" alt="${c.title}">
+                            <div class="card-body">
+                                <h5 class="card-title fw-normal"><a href="#" class="stretched-link text-dark text-decoration-none">${c.title}</a></h5>
+                                <div class="d-sm-flex justify-content-between align-items-center">
+                                    <h6 class="mb-0 small">${c.instructor}</h6>
+                                    <a href="#" class="btn btn-link p-0 small">View detail</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+            });
+
+            // Render FAQ
+            const faqContainer = document.getElementById('faqAccordion');
+            faqs.forEach((f, i) => {
+                faqContainer.innerHTML += `
+                    <div class="accordion-item border-0 border-bottom mb-2 rounded">
+                        <h2 class="accordion-header"><button class="accordion-button fw-bold text-dark bg-white shadow-none ${f.show ? '' : 'collapsed'}" type="button" data-bs-toggle="collapse" data-bs-target="#f${i}">${f.q}</button></h2>
+                        <div id="f${i}" class="accordion-collapse collapse ${f.show ? 'show' : ''}" data-bs-parent="#faqAccordion"><div class="accordion-body text-muted pt-0">${f.a}</div></div>
+                    </div>`;
+            });
+
+            // Slider Logic
+            const slider = document.getElementById('topCoursesSlider');
+            let idx = 0;
+            const getVisible = () => window.innerWidth < 576 ? 1 : window.innerWidth < 768 ? 2 : window.innerWidth < 992 ? 3 : 4;
+            const slide = () => slider.style.transform = `translateX(-${idx * (slider.children[0].offsetWidth + 24)}px)`;
+
+            document.getElementById('sliderNext').onclick = () => { idx = (idx + 1) % (topCourses.length - getVisible() + 1); slide(); };
+            document.getElementById('sliderPrev').onclick = () => { idx = (idx - 1 + (topCourses.length - getVisible() + 1)) % (topCourses.length - getVisible() + 1); slide(); };
+
+            setInterval(() => { idx = (idx + 1) % (topCourses.length - getVisible() + 1); slide(); }, 5000);
+
+            // Scroll to Top
+            const sBtn = document.getElementById('scrollTopBtn');
+            window.onscroll = () => { sBtn.style.opacity = window.scrollY > 300 ? '1' : '0'; sBtn.style.visibility = window.scrollY > 300 ? 'visible' : 'hidden'; };
+            sBtn.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+
+</html>

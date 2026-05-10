@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 42" width="200" height="42">
+  <g transform="translate(0,2)">
+    <circle cx="16" cy="19" r="14" fill="none" stroke="#f7c32e" stroke-width="3" stroke-dasharray="60 100"/>
+    <text x="10" y="26" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#24292d">e</text>
+  </g>
+  <text x="38" y="30" font-family="'Heebo', sans-serif" font-size="28" font-weight="700" fill="#24292d">Eduport</text>
+</svg>
